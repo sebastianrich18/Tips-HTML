@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tip Splitter</title>
+</head>
+
+<body>
+    <div class='header'>
+        <div class="employee" style='display: inline-block; padding: 17px'>
+            <p>Employee</p>
+        </div>
+        <div class="hours" style='display: inline-block; padding: 20px'>
+            <p>Hours</p>
+        </div>
+        <div class="pay" style='display: inline-block; padding: 20px'>
+            <p>Pay</p>
+        </div>
+    </div>
+    <div class='row'>
+        <select id="select1">
+        </select>
+        <input type="text" id="hours1">
+        <div class='earned' style="display: inline-block">$</div>
+    </div>
+    <div class='row'>
+        <select id="select2">
+        </select>
+        <input type="text" id="hours2">
+        <div class='earned' style="display: inline-block">$</div>
+    </div>
+    <div class='row'>
+        <select id="select3">
+        </select>
+        <input type="text" id="hours3">
+        <div class='earned' style="display: inline-block">$</div>
+    </div>
+    <div class='row'>
+        <select id="select4">
+        </select>
+        <input type="text" id="hours4">
+        <div class='earned' style="display: inline-block">$</div>
+    </div>
+    <div class='row'>
+        <select id="select5">
+        </select>
+        <input type="text" id="hours5">
+        <div class='earned' style="display: inline-block">$</div>
+    </div>
+    <div class='row'>
+        <select id="select6">
+        </select>
+        <input type="text" id="hours6">
+        <div class='earned' style="display: inline-block">$</div>
+    </div>
+    <input type="text" placeholder="Total Tips" id='totalTips'>
+    <button onclick="calculateTips()">Split Tips</button>
+    <button onclick="addEmployee()">Add Employee</button>
+    <button onclick="removeEmployee()">Remove Employee</button>
+
+</body>
+<script src='scripts.js'></script>
+
+</html>
