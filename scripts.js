@@ -16,7 +16,7 @@ function initSelects() {
 
 function getHours() {
     let acc = [];
-    for (let i = 0; i < numRows; i++) {
+    for (let i = 0; i < 6; i++) {
         let val = document.getElementById("hours" + (1 + i)).value;
         (val != '') ? acc.push(parseInt(val)) : acc.push(0);
     }
@@ -35,9 +35,9 @@ function calculateTips() {
     for (let i in hours) {
         pay.push((payPerHour * hours[i]).toFixed(2));
     }
-    let divs = document.getElementsByClassName("earned");
-    for (let i in divs) {
-        divs[i].innerText = "$" + pay[i]
+    for (let i=0; i<6; i++) {
+        let div = document.getElementById("earned" + (1 + i));
+        div.innerText = "$" + pay[i]
     }
 }
 
